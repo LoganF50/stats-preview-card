@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-stat-card-using-flexbox-FMDvzNekXv)
 - Live Site URL: [Github Pages URL](https://loganf50.github.io/stats-preview-card/)
 
 ## My process
