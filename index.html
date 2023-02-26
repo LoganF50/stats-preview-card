@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body>
+    <main class="card">
+      <div class="card__image-wrapper">
+        <picture>
+          <source
+            class="card__image"
+            srcset="./images/image-header-mobile.jpg"
+            media="(min-width: 800px)"
+          />
+          <img
+            class="card__image"
+            src="./images/image-header-desktop.jpg"
+            alt=""
+          />
+        </picture>
+      </div>
+      <div class="card__details">
+        <h1 class="card__title">
+          Get <span class="accent-text">insights</span> that help your business
+          grow.
+        </h1>
+        <p class="card__description">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div class="card__stats">
+          <div>
+            <p class="stat__value">10k+</p>
+            <p class="stat__description">companies</p>
+          </div>
+          <div>
+            <p class="stat__value">314</p>
+            <p class="stat__description">templates</p>
+          </div>
+          <div>
+            <p class="stat__value">12M+</p>
+            <p class="stat__description">queries</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/LoganF50" target="_blank"
+          >Logan Faschingbauer</a
+        >.
+      </div>
+    </footer>
+  </body>
 </html>
